@@ -234,7 +234,7 @@ class gocoinpay extends base {
  
         include DIR_WS_INCLUDES . 'gocoinlib/src/GoCoin.php';
         
-        if (empty($client_id) || empty($client_secret) || empty($access_token)) {
+        if (empty($access_token)) {
             $result = 'error';
             $json['error'] = 'GoCoin Payment Paramaters not Set. Please report this to Site Administrator.';
         } else {
