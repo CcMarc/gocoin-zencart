@@ -18,7 +18,7 @@ function shoGocoinToken() {
 
     try {
         $token = GoCoin::requestAccessToken($client_id, $client_secret, $code, null);
-        echo "<b>Copy this Access Token into your GoCoin Module: </b><br>" . $client->getToken();
+        echo "<b>Copy this Access Token into your GoCoin Module: </b><br>" . $token;
     } catch (Exception $e) {
         echo "Problem in getting Token: " . $e->getMessage();
     }
